@@ -1,0 +1,67 @@
+------------------------------------------------------------------------
+r1328 | resike | 2015-06-25 19:35:28 +0000 (Thu, 25 Jun 2015) | 1 line
+Changed paths:
+   A /tags/v6.2.0d release (from /trunk:1327)
+
+Tagging as v6.2.0d release
+------------------------------------------------------------------------
+r1327 | Resike | 2015-06-25 19:33:32 +0000 (Thu, 25 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/Tracker.lua
+
+- Fully absorbed/missed Stagger dots should properly get added to the Damage Taken.
+------------------------------------------------------------------------
+r1325 | Resike | 2015-06-24 13:25:08 +0000 (Wed, 24 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/Recount.toc
+
+- Update for 6.2.0.
+------------------------------------------------------------------------
+r1323 | Resike | 2015-06-24 13:17:55 +0000 (Wed, 24 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/Tracker.lua
+
+- Update for 6.2.0.
+------------------------------------------------------------------------
+r1321 | Resike | 2015-06-24 13:02:50 +0000 (Wed, 24 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/Bindings.xml
+
+- Bindings fixes.
+------------------------------------------------------------------------
+r1320 | Resike | 2015-06-24 10:58:37 +0000 (Wed, 24 Jun 2015) | 2 lines
+Changed paths:
+   M /trunk/Tracker.lua
+
+- Absorbed DoTs will show up properly as a dot. (Thanks to Mik_lie.)
+- Stagger's damage, will not show up on the Damage Done or on the DoT uptime.
+------------------------------------------------------------------------
+r1318 | Resike | 2015-06-21 20:40:07 +0000 (Sun, 21 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/LazySync.lua
+
+- Sync fixes regarding not in raid/party spam.
+------------------------------------------------------------------------
+r1317 | Resike | 2015-06-21 19:02:20 +0000 (Sun, 21 Jun 2015) | 2 lines
+Changed paths:
+   M /trunk/Tracker.lua
+
+- Removed some irrelevant absorb code handlers.
+- Some performance upgradements.
+------------------------------------------------------------------------
+r1315 | Resike | 2015-06-15 17:25:08 +0000 (Mon, 15 Jun 2015) | 1 line
+Changed paths:
+   M /trunk/Tracker.lua
+
+- Stagger's damage should show up as damage taken, instead of friendly fire.
+------------------------------------------------------------------------
+r1313 | Resike | 2015-05-31 21:26:31 +0000 (Sun, 31 May 2015) | 4 lines
+Changed paths:
+   M /trunk/Tracker.lua
+   M /trunk/TrackerModules/TrackerModule_CCBreakers.lua
+
+- Modules updates.
+- Phasing error fix.
+- Fixed some other smaller issues.
+- Some clean up.
+------------------------------------------------------------------------

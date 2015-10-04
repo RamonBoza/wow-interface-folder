@@ -1,0 +1,210 @@
+
+
+
+=== ** Register
+
+Use this to embed BigLibTimer into your addon. Use either the argument or the return value but not both, because that would be the same as just using the argument.
+
+<<code lua>>handler = LibStub:GetLibrary("BigLibTimer6"):Register(handler)<</code>>
+
+===== ** Arguments:
+
+; ** handler
+:		Table or frame to have the BigLibTimer functions saved to.
+
+===== ** Returns:
+
+; ** handler
+:		Table with the BigLibTimer functions saved to it.
+
+\\
+----
+\\
+
+=== ** SetTimer
+
+This is a function used to create a timer.
+
+<<code lua>>handler:SetTimer(Name, Seconds, RepeatSeconds, Function, ...)<</code>>
+
+===== ** Arguments:
+
+; ** Name
+:		String that you wish to name a created timer with.
+; ** Seconds
+:		Number of seconds until the timer expires or until the timer begins repeating.
+; ** RepeatSeconds
+:		Number of seconds to wait before repeating the timer in a loop. Use 0 or nil to not repeat the timer.
+; ** Function
+:		Function that will be called when the timer expires or starts another loop.
+; ** ...
+:		Variable number of arguments that will be passed to the included function when the timer expires or starts another loop.
+
+\\
+----
+\\
+
+=== ** IsTimer
+
+This is a function used to find out if a timer exists.
+
+<<code lua>>found = handler:IsTimer(Name, Search)<</code>>
+
+===== ** Arguments:
+
+; ** Name
+:		String with the name of an existing timer.
+; ** Search
+:		If true will cause this function to compare all existing timer names to the specified name.
+
+===== ** Returns:
+
+; ** found
+:		Boolean indicating if a specified timer exists.
+
+\\
+----
+\\
+
+=== ** IsRepeatTimer
+
+This is a function used to find out if a timer that is set to repeat exists.
+
+<<code lua>>found = handler:IsRepeatTimer(Name, Search)<</code>>
+
+===== ** Arguments:
+
+; ** Name
+:		String with the name of an existing timer.
+; ** Search
+:		If true will cause this function to compare all existing timer names to the specified name.
+
+===== ** Returns:
+
+; ** found
+:		Boolean indicating if a specified timer exists.
+
+\\
+----
+\\
+
+=== ** GetTimer
+
+This is a function to find the seconds remaining on a specified timer.
+
+<<code lua>>seconds = handler:GetTimer(Name)<</code>>
+
+===== ** Arguments:
+
+; ** Name
+:		String with the name of an existing timer.
+
+===== ** Returns:
+
+; ** seconds
+:		Number indicating the seconds remaining on a specified timer. If the timer is on a loop this will return the seconds remaining until the next loop starts.
+
+\\
+----
+\\
+
+=== ** ReplaceTimer
+
+This is a function used to replace values inside an existing timer. Values that are nil will not be used except for the function arguments if a function is added. Values that are false or invalid will be cleared except for the function arguments if a function is added. If a function is added all arguments will need to be included, as they will be replaced with the function. This function will not create a timer if it does not find one to replace values in.
+
+<<code lua>>found = handler:ReplaceTimer(Name, Seconds, RepeatSeconds, Function, ...)<</code>>
+
+===== ** Arguments:
+
+; ** Name
+:		String with the name of an existing timer.
+; ** Seconds
+:		Number of seconds until the timer expires or until the timer begins repeating.
+; ** RepeatSeconds
+:		Number of seconds to wait before repeating the timer in a loop. Use 0 to not repeat the timer.
+; ** Function
+:		Function that will be called when the timer expires or starts another loop.
+; ** ...
+:		Variable number of arguments that will be passed to the included function when the timer expires or starts another loop. This will not be used unless a function has been included.
+
+===== ** Returns:
+
+; ** found
+:		Boolean indicating if a timer was found to replace values for it.
+
+\\
+----
+\\
+
+=== ** ClearTimer
+
+This is a function used to remove an existing timer.
+
+<<code lua>>found = handler:ClearTimer(Name, Search)<</code>>
+
+===== ** Arguments:
+
+; ** Name
+:		String with the name of an existing timer.
+; ** Search
+:		If true will cause this function to compare all existing timer names to the specified name.
+
+===== ** Returns:
+
+; ** found
+:		Boolean indicating if any existing timers was found and cleared.
+
+\\
+----
+\\
+
+=== ** ClearAllTimers
+
+This is a function used to remove all existing timers.
+
+<<code lua>>handler:ClearAllTimers()<</code>>
+
+\\
+----
+\\
+
+=== ** CreateTable
+
+This is a function used to create a table or use one from an existing pool of available tables to be reused.
+
+<<code lua>>Table = handler:CreateTable(Table, All)<</code>>
+
+===== ** Arguments:
+
+; ** Table
+:		Add a table to be wiped and reused.
+; ** All
+:		If a table is used for the first argument and this argument is true it will search the table for more tables to be recycled.
+
+===== ** Returns:
+
+; ** Table
+:		A newly created table or a wiped table taken from an existing pool of available tables to be reused.
+
+\\
+----
+\\
+
+=== ** RecycleTable
+
+This is a function used to wipe a table, place in the pool of available tables to be reused, and then delete the reference to the original variable.
+
+<<code lua>>Table = handler:RecycleTable(Table, All)<</code>>
+
+===== ** Arguments:
+
+; ** Table
+:		A table to clear and place in the pool of available tables to be reused.
+; ** All
+:		If this argument is true it will search the table for more tables to be recycled.
+
+===== ** Returns:
+
+; ** Table
+:		This returns nil to clear the original variable.
+

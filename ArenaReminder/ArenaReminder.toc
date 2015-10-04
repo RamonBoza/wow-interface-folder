@@ -1,0 +1,12 @@
+## Interface: 50100
+## Title: ArenaReminder
+## Notes: Plays audio notifications when an arena queue is about to expire.
+## Author: Veev
+## SavedVariables: SavedVar
+
+#@no-lib-strip@
+libs\LibStub\LibStub.lua
+libs\BigLibTimer\BigLibTimer\BigLibTimer.lua
+#@end-no-lib-strip@
+
+ArenaReminder.lua

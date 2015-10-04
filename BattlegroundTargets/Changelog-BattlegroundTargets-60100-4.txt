@@ -1,0 +1,132 @@
+------------------------------------------------------------------------
+r266 | kunda | 2015-04-21 17:02:48 +0000 (Tue, 21 Apr 2015) | 11 lines
+Changed paths:
+   A /tags/60100-4 (from /trunk:265)
+
+New in BattlegroundTargets-60100-4:
+- fix low level bug (name4button)
+- option update
+
+New in BattlegroundTargets-60100-3:
+- fix Target Count
+
+New in BattlegroundTargets-60100-2:
+- Friendly Players
+- PvP Trinket Timer (your combat log range)
+- fixes and improvements
+------------------------------------------------------------------------
+r265 | kunda | 2015-04-21 16:59:56 +0000 (Tue, 21 Apr 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+
+update
+------------------------------------------------------------------------
+r264 | kunda | 2015-04-21 16:54:23 +0000 (Tue, 21 Apr 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+
+update
+------------------------------------------------------------------------
+r263 | kunda | 2015-04-20 15:13:00 +0000 (Mon, 20 Apr 2015) | 2 lines
+Changed paths:
+   M /trunk/BattlegroundTargets-texture-icons.tga
+   M /trunk/BattlegroundTargets.lua
+   M /trunk/BattlegroundTargets_templates.lua
+
+- update options
+- fix low level bug (name4button)
+------------------------------------------------------------------------
+r262 | kunda | 2015-04-20 15:06:32 +0000 (Mon, 20 Apr 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+
+main test data update
+------------------------------------------------------------------------
+r261 | kunda | 2015-04-20 15:02:13 +0000 (Mon, 20 Apr 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+   M /trunk/BattlegroundTargets.toc
+
+variable name change for consistency
+------------------------------------------------------------------------
+r259 | kunda | 2015-04-04 16:25:14 +0000 (Sat, 04 Apr 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+
+update
+------------------------------------------------------------------------
+r258 | kunda | 2015-04-03 19:30:26 +0000 (Fri, 03 Apr 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+   M /trunk/BattlegroundTargets.toc
+
+fix Target Count
+------------------------------------------------------------------------
+r256 | kunda | 2015-03-29 18:44:07 +0000 (Sun, 29 Mar 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+
+update
+------------------------------------------------------------------------
+r255 | kunda | 2015-03-29 09:55:27 +0000 (Sun, 29 Mar 2015) | 3 lines
+Changed paths:
+   M /trunk/BattlegroundTargets-localization-enUS.lua
+   M /trunk/BattlegroundTargets.lua
+   M /trunk/BattlegroundTargets_templates.lua
+
+- update
+- The alpha versions r248 - r254 accidentally deleted some saved frame positions.
+  This is now fixed.
+------------------------------------------------------------------------
+r254 | kunda | 2015-03-25 17:16:33 +0000 (Wed, 25 Mar 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+
+update
+------------------------------------------------------------------------
+r253 | kunda | 2015-03-23 21:49:51 +0000 (Mon, 23 Mar 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets.lua
+
+update
+------------------------------------------------------------------------
+r252 | ananhaid | 2015-03-21 15:58:33 +0000 (Sat, 21 Mar 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets-localization-zhCN.lua
+   M /trunk/BattlegroundTargets-localization-zhTW.lua
+
+- zhCN/zhTW update.
+------------------------------------------------------------------------
+r251 | kunda | 2015-03-21 14:07:39 +0000 (Sat, 21 Mar 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets-localization-deDE.lua
+   M /trunk/BattlegroundTargets-localization-enUS.lua
+   M /trunk/BattlegroundTargets-localization-esES.lua
+   M /trunk/BattlegroundTargets-localization-esMX.lua
+   M /trunk/BattlegroundTargets-localization-frFR.lua
+   M /trunk/BattlegroundTargets-localization-itIT.lua
+   M /trunk/BattlegroundTargets-localization-koKR.lua
+   M /trunk/BattlegroundTargets-localization-ptBR.lua
+   M /trunk/BattlegroundTargets-localization-ruRU.lua
+   M /trunk/BattlegroundTargets-localization-zhCN.lua
+   M /trunk/BattlegroundTargets-localization-zhTW.lua
+   M /trunk/BattlegroundTargets.lua
+
+update
+------------------------------------------------------------------------
+r250 | ananhaid | 2015-03-20 07:15:29 +0000 (Fri, 20 Mar 2015) | 1 line
+Changed paths:
+   M /trunk/BattlegroundTargets-localization-deDE.lua
+   M /trunk/BattlegroundTargets-localization-enUS.lua
+   M /trunk/BattlegroundTargets-localization-esES.lua
+   M /trunk/BattlegroundTargets-localization-esMX.lua
+   M /trunk/BattlegroundTargets-localization-frFR.lua
+   M /trunk/BattlegroundTargets-localization-itIT.lua
+   M /trunk/BattlegroundTargets-localization-koKR.lua
+   M /trunk/BattlegroundTargets-localization-ptBR.lua
+   M /trunk/BattlegroundTargets-localization-ruRU.lua
+   M /trunk/BattlegroundTargets-localization-zhCN.lua
+   M /trunk/BattlegroundTargets-localization-zhTW.lua
+
+- zhCN/zhTW update.
+------------------------------------------------------------------------

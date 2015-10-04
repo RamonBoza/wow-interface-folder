@@ -1,0 +1,155 @@
+
+
+
+== Version 6.0.2
+
+* Bumped toc version number.
+
+
+== Version 6.0.1
+
+* Bumped toc version number.
+
+
+== Version 6.0
+
+* The :RecycleTable function now stores unused tables in a weak table so that garbage collection will be able to remove tables that have not yet been reused.
+* Removed functions:
+** :ClearRecycleTablePool
+** :UnRegister
+
+
+== Version 5.1
+
+* The All argument in the :RecycleTable function will now also scan table keys for tables.
+
+
+== Version 5.0
+
+* Repaired the :RecycleTable function.
+** The 4.x versions do not properly use :RecycleTable and will cause problems.
+
+
+== Version 4.2
+
+* Fixed possible bug with the :RecycleTable function.
+
+
+== Version 4.1
+
+* Added the :ClearRecycleTablePool function.
+
+
+== Version 4.0
+
+* Added the :CreateTable and :RecycleTable functions.
+
+
+== Version 3.9.1
+
+* Bumped TOC to 40300.
+
+
+== Version 3.9
+
+* Added the :IsRepeatTimer function.
+
+
+== Version 3.8.1
+
+* Repaired toc file.
+
+
+== Version 3.8
+
+* The :ReplaceTimer function will now clear values that use false arguments. Arguments that are nil will still be ignored.
+
+
+== Version 3.7.2
+
+* Bumped TOC to 40200.
+
+
+== Version 3.7.1
+
+* Bumped TOC to 40100.
+
+
+== Version 3.7
+
+* Cleaned up the code a little to improve performance.
+
+
+== Version 3.6
+
+* Repaired the Search option in the :ClearTimer function.
+
+
+== Version 3.5
+
+* Slight change to code with no real impact to functionality.
+
+
+== Version 3.4
+
+* Changed the title in the toc file to indicate that this is a library.
+** No change was made to the library itself.
+
+
+== Version 3.3
+
+* Repaired the :UnRegister function.
+
+
+== Version 3.2
+
+* Repositioned the embedded LibStub folder for the last time.
+** Removed the extra libs folder.
+
+
+== Version 3.1
+
+* Updated scripting to upgrade better when older versions are present.
+
+
+== Version 3.0.3
+
+* Now packaging with LibStub embedded.
+
+
+== Version 3.0.2
+
+* Added Ace3 as an optional dependency in the toc file.
+
+
+== Version 3.0.1
+
+* Removed project version number from the BigLibTimer.lua file.
+
+
+== Version 3.0
+
+* Now using the LibStub library.
+** The LibStub library will need to be embedded or installed separately and loaded before this library.
+
+
+== Version 2.0.1
+
+* Bumped the toc file interface number to 40000.
+
+
+== Version 2.0
+
+* Reformatted the data tables and placed the BigLibTimer.lua file into a separate folder.
+** Previous versions are likely to not work with this version running.
+
+
+== Version 1.1
+
+* Removed a few redundant checks in the functions.
+
+
+== Version 1.0
+
+* First release.
+

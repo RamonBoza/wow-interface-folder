@@ -1,0 +1,190 @@
+## Title: NPA2
+## Author: Nogarder(Åµ¸ñÀ­µÂ)
+## Notes: NamePlateAdvance2
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## Interface: 60100
+## SavedVariables: NPA_Profile, NPA_Language
+## SavedVariablesPerCharacter: NPA_Setting
+--header--
+Header.lua
+
+--core--
+EventHandler.lua
+MainFrame.lua
+SettingManager.lua
+CombatLogParser.lua
+Timer.lua
+
+--lib--
+Lib\Color.lua
+Lib\SpellInfo.lua
+Lib\FontManager.lua
+Lib\TextManager.lua
+Lib\TextureManager.lua
+Lib\FrameMacro.lua
+Lib\BarManager.lua
+Lib\NumberManager.lua
+Lib\IconGroup.lua
+Lib\ArrowManager.lua
+Lib\CombatTextManager.lua
+Lib\ConditionChecker.lua
+Lib\InfoFromFlag.lua
+
+
+--nameplate--
+NamePlate.lua
+
+--data collector base--
+DataCollector\FrameToGUID.lua
+DataCollector\DataCollector.lua
+DataCollector\TooltipsScaner.lua
+
+--data collector modules-
+DataCollector\Modules\TooltipsScaner.lua
+DataCollector\Modules\Name.lua
+DataCollector\Modules\Class.lua
+DataCollector\Modules\Health.lua
+DataCollector\Modules\Casting.lua
+DataCollector\Modules\Threat.lua
+DataCollector\Modules\Alpha.lua
+DataCollector\Modules\Classification.lua
+DataCollector\Modules\Level.lua
+DataCollector\Modules\Type.lua
+DataCollector\Modules\Aura.lua
+DataCollector\Modules\Target.lua
+DataCollector\Modules\Quest.lua
+DataCollector\Modules\SpellLock.lua
+DataCollector\Modules\Summoned.lua
+DataCollector\Modules\RaidTarget.lua
+DataCollector\Modules\OnShow.lua
+DataCollector\Modules\CoolDown.lua
+DataCollector\Modules\CC_DR.lua
+DataCollector\Modules\Power.lua
+DataCollector\Modules\ComboPoints.lua
+DataCollector\Modules\Speed.lua
+DataCollector\Modules\Tapped.lua
+DataCollector\Modules\Guild.lua
+DataCollector\Modules\NPCGuild.lua
+DataCollector\Modules\FullName.lua
+DataCollector\Modules\UnitID.lua
+DataCollector\Modules\Unit.lua
+DataCollector\Modules\Server.lua
+DataCollector\Modules\Friends.lua
+DataCollector\Modules\Role.lua
+DataCollector\Modules\BaseEvent.lua
+DataCollector\Modules\Shield.lua
+DataCollector\Modules\Range.lua
+
+--NamePlate--
+--NamePlate profile manager--
+NamePlate\ProfileManager.lua
+--NamePlate data parser--
+NamePlate\DataParser.lua
+--NamePlate module manager--
+NamePlate\ModuleManager.lua
+
+--modules--
+NamePlate\Modules\Text.lua
+NamePlate\Modules\TextureGroup.lua
+NamePlate\Modules\BarGroup.lua
+NamePlate\Modules\Default.lua
+NamePlate\Modules\Icon.lua
+NamePlate\Modules\Number.lua
+NamePlate\Modules\IconGroup.lua
+NamePlate\Modules\MainFrame.lua
+--datamodules--
+NamePlate\DataModules\PlaceHolder.lua
+NamePlate\DataModules\Aura.lua
+NamePlate\DataModules\Name.lua
+NamePlate\DataModules\Level.lua
+NamePlate\DataModules\Health.lua
+NamePlate\DataModules\Class.lua
+NamePlate\DataModules\Casting.lua
+NamePlate\DataModules\Target.lua
+NamePlate\DataModules\Mouseover.lua
+NamePlate\DataModules\Focus.lua
+NamePlate\DataModules\Threat.lua
+NamePlate\DataModules\Quest.lua
+NamePlate\DataModules\Alpha.lua
+NamePlate\DataModules\Scale.lua
+NamePlate\DataModules\Offset.lua
+NamePlate\DataModules\SpellLock.lua
+NamePlate\DataModules\Summoned.lua
+NamePlate\DataModules\UnitID.lua
+NamePlate\DataModules\RaidTarget.lua
+NamePlate\DataModules\CoolDown.lua
+NamePlate\DataModules\CrowdControl.lua
+NamePlate\DataModules\CC_DR.lua
+NamePlate\DataModules\Power.lua
+NamePlate\DataModules\FrameLevel.lua
+NamePlate\DataModules\ComboPoints.lua
+NamePlate\DataModules\Speed.lua
+NamePlate\DataModules\Tapped.lua
+NamePlate\DataModules\Guild.lua
+NamePlate\DataModules\NPCGuild.lua
+NamePlate\DataModules\FullName.lua
+NamePlate\DataModules\Server.lua
+NamePlate\DataModules\Classification.lua
+NamePlate\DataModules\Role.lua
+NamePlate\DataModules\Shield.lua
+NamePlate\DataModules\Range.lua
+
+--target arrow--
+TargetArrow\TargetArrow.lua
+
+--extra arrow--
+ExtraArrow\ExtraArrow.lua
+
+--combat text--
+CombatText\CombatText.lua
+
+--tracker--
+Tracker\Tracker.lua
+
+--default Setting--
+--core--
+DefaultSetting\Core\Core.lua
+--resources--
+DefaultSetting\Resources\Font.lua
+DefaultSetting\Resources\Texture.lua
+DefaultSetting\Resources\Color.lua
+DefaultSetting\Resources\Number.lua
+DefaultSetting\Resources\BarGroup.lua
+DefaultSetting\Resources\Class.lua
+DefaultSetting\Resources\CountDown.lua
+DefaultSetting\Resources\Spell.lua
+DefaultSetting\Resources\RaidTarget.lua
+DefaultSetting\Resources\SelfLib.lua
+DefaultSetting\Resources\Role.lua
+DefaultSetting\Resources\Unit.lua
+--nameplate--
+DefaultSetting\NamePlate\Text.lua
+DefaultSetting\NamePlate\TextureGroup.lua
+DefaultSetting\NamePlate\BarGroup.lua
+DefaultSetting\NamePlate\Default.lua
+DefaultSetting\NamePlate\Icon.lua
+DefaultSetting\NamePlate\Number.lua
+DefaultSetting\NamePlate\IconGroup.lua
+DefaultSetting\NamePlate\Alpha.lua
+DefaultSetting\NamePlate\Scale.lua
+DefaultSetting\NamePlate\Offset.lua
+DefaultSetting\NamePlate\FrameLevel.lua
+--nameplate condition--
+DefaultSetting\NamePlateCondition\NamePlateCondition.lua
+--target arrow--
+DefaultSetting\TargetArrow\TargetArrow.lua
+--extra arrow--
+DefaultSetting\ExtraArrow\ExtraArrow.lua
+--combat text--
+DefaultSetting\CombatText\CombatText.lua
+--tracker--
+DefaultSetting\Tracker\Tracker.lua
+--profile--
+DefaultSetting\Profiles\Default.lua
+
+--misc--
+Misc\SpellidInTooltips.lua
+
+--debug--
+--Debug.lua

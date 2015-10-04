@@ -1,0 +1,7 @@
+## Interface: 40000
+## Title: NCATeamRating
+## Version: 1.2
+## Author: Gaffer
+## Notes: Announces team ratings after a successful arena match.
+
+NCATeamRating.lua

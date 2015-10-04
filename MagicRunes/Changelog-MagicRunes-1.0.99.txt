@@ -1,0 +1,29 @@
+------------------------------------------------------------------------
+r99 | dhedbor | 2014-10-17 06:22:24 +0000 (Fri, 17 Oct 2014) | 1 line
+Changed paths:
+   A /tags/1.0.99 (from /trunk:98)
+
+Tagging as 1.0.99
+------------------------------------------------------------------------
+r98 | dhedbor | 2014-10-17 06:03:14 +0000 (Fri, 17 Oct 2014) | 1 line
+Changed paths:
+   M /trunk/IconDisplay/MagicRunes_IconDisplay.toc
+   M /trunk/MagicRunes.toc
+   M /trunk/RuneBars/MagicRunes_RuneBars.toc
+
+6.0 toc
+------------------------------------------------------------------------
+r97 | dhedbor | 2014-09-27 18:18:14 +0000 (Sat, 27 Sep 2014) | 1 line
+Changed paths:
+   M /trunk/MagicRunes.lua
+
+Fixed small issue with PTR/WoD Beta support.
+------------------------------------------------------------------------
+r96 | dhedbor | 2014-07-08 19:01:59 +0000 (Tue, 08 Jul 2014) | 1 line
+Changed paths:
+   M /trunk/IconDisplay/MagicRunes_IconDisplay.toc
+   M /trunk/MagicRunes.toc
+   M /trunk/RuneBars/MagicRunes_RuneBars.toc
+
+Toc bump
+------------------------------------------------------------------------

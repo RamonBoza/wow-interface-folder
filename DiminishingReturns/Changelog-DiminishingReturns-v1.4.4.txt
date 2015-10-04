@@ -1,0 +1,11 @@
+tag v1.4.4
+e79e456e29c2d70a279363fb8525f0f552784504
+Adirelle <adirelle@gmail.com>
+2014-12-09 20:40:09 +0100
+
+Fetch latest DRData-1.0.
+
+
+--------------------
+
+No changelog

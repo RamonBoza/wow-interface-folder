@@ -1,0 +1,12 @@
+tag 4.6.9
+94b51c764ecbb108dd9841948c52c24e84b2b295
+Hendrik Leppkes <h.leppkes@gmail.com>
+2015-06-23 15:47:41 +0200
+
+Tag as 4.6.9
+
+
+--------------------
+
+Hendrik Leppkes:
+	- Update TOC for 6.2

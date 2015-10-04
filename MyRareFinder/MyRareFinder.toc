@@ -1,0 +1,10 @@
+## Interface: 60000
+## Title: MyRareFinder
+## Version: 1.0
+## Notes: MyRareFinder is an lightweight addon for easy overview of rares on your worldmap in Draenor and even identifies if you have killed a one-time rare or not.
+## SavedVariablesPerCharacter: MyRareFinderNormalRares, MyRareFinderDailyRares, MyRareFinderOneTimeRares, MyRareFinderKilledOTRares
+
+#Data
+MyRareFinderloc.lua
+MyRareFinder.lua
+MyRareFinder.xml

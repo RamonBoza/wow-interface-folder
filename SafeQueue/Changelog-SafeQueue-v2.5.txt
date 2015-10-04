@@ -1,0 +1,12 @@
+tag v2.5
+0b686a15e577089c77690a7d6c0e48800d788038
+Jordon <jordon@localhost>
+2015-05-23 17:20:56 -0700
+
+Tagging as v2.5
+
+
+--------------------
+
+Jordon:
+	- update for 6.1

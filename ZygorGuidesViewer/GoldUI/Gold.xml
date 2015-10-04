@@ -1,0 +1,28 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/FrameXML/UI.xsd">
+	<Script file="Gold.lua" />
+	<Script file="GoldFrameBaseWidget.lua" />
+	<Script file="TooltipHelpers.lua" />
+	<Script file="Scan.lua" />
+	<Script file="GoldUI.lua" />
+	<Script file="GoldHelp.lua" />
+	<Script file="StackSizes.lua" />
+
+	<!--
+	<Script file="AppraiserView.lua" />
+	<Script file="Appraiser.lua" />
+	-->
+
+	<Script file="Appraiser2.lua" />
+	<Script file="Appraiser2View.lua" />
+	-->
+
+	<Script file="MailboxUI.lua" />
+	
+	<Script file="GoldDataDailies.lua" />
+	<Script file="GoldDataHuntingSimple.lua" />
+	<Script file="GoldDataHuntingSkinning.lua" />
+	<Script file="GoldDataGatheringMining.lua" />
+	<Script file="GoldDataGatheringHerbs.lua" />
+	<Script file="ServerTrends.lua" />
+	<Script file="Crafting.lua" />
+</Ui>

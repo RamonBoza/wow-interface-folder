@@ -1,0 +1,13 @@
+﻿## Interface: 50100
+## Version: 6.0.2
+## Author: BigRedBrent
+## Title: Lib: BigLibTimer
+## Notes: This is a timer library originally created for the SpellFlash addon.
+## URL: http://www.curse.com/addons/wow/biglibtimer
+## OptionalDeps: LibStub, Ace3
+## X-Curse-Packaged-Version: 6.0.2
+## X-Curse-Project-Name: BigLibTimer
+## X-Curse-Project-ID: biglibtimer
+## X-Curse-Repository-ID: wow/biglibtimer/mainline
+LibStub\LibStub.lua
+BigLibTimer\BigLibTimer.lua

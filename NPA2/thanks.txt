@@ -1,0 +1,12 @@
+spcial thanks to these wonderful addons:
+Aloft
+VitualPlates
+AVR
+X-Perl
+gladius
+
+I learned most of addon programming from them
+and ,some beautiful codes (no more textures!) are (almost) copied from them
+
+also thanks to AddOn Studio for World of Warcraft
+greatest addon tool ever!

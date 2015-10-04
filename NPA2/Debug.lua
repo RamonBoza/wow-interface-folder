@@ -1,0 +1,214 @@
+﻿-- Author      : Nogarder
+-- Create Date : 2013/4/3 10:47:04
+
+--NPA.EventHandler.RegisterEvent(2,"DataCollector_DefaultNamePlate_OnShow","Debug",function(framedata)
+--	--framedata.GUIDText:SetText(framedata.GUID)
+--	--print("default on show")
+--end)
+	
+--NPA.EventHandler.RegisterEvent(1,"NamePlate_DefaultMain_OnHook","Debug",function(framedata)
+--	--debug region
+--	local guidtext=framedata.Parent:CreateFontString()
+--	guidtext:SetFont(GameFontNormal:GetFont())
+--	guidtext:SetPoint("TOP",framedata.Parent,"BOTTOM",0,-10)
+
+--	framedata.GUIDText=guidtext
+
+--	--print("default on hook")
+--end)
+--NPA.EventHandler.RegisterEvent(1,"DataCollector_GUIDAttached","Debug",function(framedata)
+--	framedata.GUIDText:SetText(framedata.GUID)
+--	--print("attach guid")
+--end)
+
+--NPA.EventHandler.RegisterEvent(8,"Name_Updated","Debug",function(framedata)
+--	print(framedata.OriginalName)
+--	--framedata.GUIDText:SetText(framedata.OriginalName)
+--end)
+
+--NPA.EventHandler.RegisterEvent(6,"SettingManager_SettingLoaded","Debug",function()
+--	print("setting onload")
+--	--create an test arrow
+--	local setting={
+--		Gap=10,
+--		MaxPerLine=10,
+--		TextureFileName="Default",
+--		SpeedPerSecond=1,
+--		StartSize=5,
+--		EndSize=10,
+--		Alpha=1,
+--	}
+--	local arrow=NPA.ArrowManager.CreateArrow()
+--	arrow:SetPoint("LEFT",UIParent,"LEFT",0,0)
+--	arrow.EndPoint:SetPoint("RIGHT",UIParent,"RIGHT",0,0)
+--	NPA.ArrowManager.ManageArrow(arrow,setting,100)
+--end)
+----gossip
+--NPA.EventHandler.RegisterEvent(0,"GOSSIP_SHOW","Debug",function()
+--	print("gossip shows")
+--end)
+--NPA.EventHandler.RegisterEvent(0,"GOSSIP_ENTER_CODE","Debug",function()
+--	print("gossip enter")
+--end)
+--NPA.EventHandler.RegisterEvent(0,"GOSSIP_CLOSED","Debug",function()
+--	print("gossip closed")
+--end)
+
+--print("loading debug")
+
+---------------------------
+--combat text debug
+--local NPA_FrameToGUID_GetFrameDataByGUID=NPA.FrameToGUID.GetFrameDataByGUID
+----
+--local CombatTextList={}
+--local CurrentCount=1
+--local MaxText=10 --max 100
+----
+--local TextOnUpdate=function(self,elapse)
+--	if(not self.Parent:IsShown())then
+--		self:Hide()
+--		return
+--	end
+--	self.Life=self.Life-elapse
+--	if(self.Life<0)then
+--		self:Hide()
+--	end
+--	--
+--	self.Offset=self.Offset+10*elapse
+--	self:SetPoint("CENTER",self.Parent,"CENTER",0,self.Offset)
+--	--
+--end
+--local CreateText=function()
+--	local frame=CreateFrame("Frame",nil,UIParent)
+--	frame:EnableMouse(false)
+--	frame:SetWidth(10)
+--	frame:SetHeight(10)
+--	frame:Hide()
+--	frame:SetScript("OnUpdate",TextOnUpdate)
+
+--	local icon=frame:CreateTexture()
+--	icon:SetWidth(10)
+--	icon:SetHeight(10)
+--	icon:SetPoint("RIGHT",frame,"LEFT",0,0)
+
+--	local text=frame:CreateFontString()
+--	text:SetPoint("CENTER",frame,"CENTER",0,0)
+--	text:SetFont(GameFontNormal:GetFont())
+--	text:SetPoint("LEFT",frame,"RIGHT",0,0)
+
+--	frame.Text=text
+--	frame.Icon=icon
+--	return frame
+--end
+--local AddText=function(parent,icon,text,setting)
+--	if(not CombatTextList[CurrentCount])then
+--		CombatTextList[CurrentCount]=CreateText()
+--	end
+--	--
+--	local frame=CombatTextList[CurrentCount]
+--	frame:SetPoint("CENTER",parent,"BOTTOMLEFT",0,0)
+--	--frame:SetPoint("CENTER",UIParent,"CENTER",0,0)
+--	frame.Text:SetText(text)
+--	frame.Icon:SetTexture(icon)
+--	frame.Life=20
+--	--
+--	CurrentCount=CurrentCount+1
+--	if(CurrentCount>MaxText)then
+--		CurrentCount=1
+--	end
+
+--	frame.Offset=0
+--	frame.Parent=parent
+--	frame:Show()
+--end
+----
+--local GetFrameByGUID=function(guid)
+--	--check player
+--	if(guid==UnitGUID("player"))then --this may change so using real-time one
+--		return UIParent --player's position is UIParent Center
+--	end
+--	--check guid to framedata
+--	local framedata=NPA_FrameToGUID_GetFrameDataByGUID(guid)
+--	if(framedata)then
+--		return framedata.ModuleMain
+--	end
+--	--not match 
+--	return nil
+--end
+----
+--local NPA_Aura_CombatLogEventFilter={
+--	["SPELL_AURA_APPLIED"]=1,
+--	["SPELL_AURA_REFRESH"]=1, --same as apply
+--	["SPELL_AURA_APPLIED_DOSE"]=1,
+--	["SPELL_AURA_REMOVED"]=2, 
+--	["SPELL_AURA_REMOVED_DOSE"]=3,
+--	--["SPELL_AURA_BROKEN"]=2, --count as remove
+--	--["SPELL_AURA_BROKEN_SPELL"]=2, --count as remove
+--	["SPELL_STOLEN"]=2, --count as remove
+--	["SPELL_DISPEL"]=2, --count as remove
+--}
+
+--local DumpArg=function(arg,index)
+--	if(arg[index]==nil)then
+--		print("arg["..index.."]: nil")
+--	elseif(arg[index]==false)then
+--		print("arg["..index.."]: false")
+--	elseif(arg[index]==true)then
+--		print("arg["..index.."]: true")
+--	else
+--		print("arg["..index.."]: "..arg[index])
+--	end
+--end
+
+--NPA.EventHandler.RegisterEvent(5,"Any","Debug",function(event,arg)
+				--[1]=timestamp
+			--[2]=event
+			--[3]=hidecaster
+			--[4]=sourceGUID
+			--[5]=srouceName
+			--[6]=sourceFlags
+			--[7]=sourceFlags2 raidflag
+			--[8]=destGUID
+			--[9]=destName
+			--[10]=destFlags
+			--[11]=destFlags2 raidflag
+			--[12]=spellid
+			--[13]=spellname
+			--[14]=spellschool
+			--[15]=auratype (Buff/Debuff)
+			--[16]=amount
+	--if(arg[2]=="SPELL_CAST_FAILED" and arg[4]==UnitGUID("player"))then--arg[2]=="SPELL_ABSORBED" or arg[2]=="SPELL_AURA_REMOVED"  or arg[2]=="SPELL_AURA_APPLIED")then
+--	if(arg[12]==69070)then 
+--		print("debug")
+--		DumpArg(arg,2)
+--		DumpArg(arg,5)
+--		DumpArg(arg,9)
+--		DumpArg(arg,12)
+--		DumpArg(arg,13)
+--		DumpArg(arg,14)
+--		DumpArg(arg,15)
+--		DumpArg(arg,16)
+--		DumpArg(arg,17)
+--		DumpArg(arg,18)
+--		DumpArg(arg,19)
+--		DumpArg(arg,20)
+--		DumpArg(arg,21)
+--		DumpArg(arg,22)
+--		DumpArg(arg,23)
+--		DumpArg(arg,24)
+--		DumpArg(arg,25)
+--	end
+--end)
+
+--DumpDebug=function()
+--	local name, rank, icon, count, debuffType, duration, expirationTime, caster, canStealOrPurge, _ , spellId = UnitDebuff("target", 1);
+--	print("Debug aura 1")
+--	print(duration)
+--	print(expirationTime)
+--	print(expirationTime-duration)
+--	local name, rank, icon, count, debuffType, duration, expirationTime, caster, canStealOrPurge, _ , spellId = UnitDebuff("target", 2);
+--	print("Debug aura 2")
+--	print(duration)
+--	print(expirationTime)
+--	print(expirationTime-duration)
+--end

@@ -1,0 +1,66 @@
+﻿-- Author      : Nogarder
+-- Create Date : 2012/5/14 10:57:55
+--core
+NPA.SettingManager.RegisterDefault("Core",function()
+	return {
+		DataCollectors={
+			["Alpha"]=true,
+			["Aura"]=true,
+			["Casting"]=true,
+			["Classification"]=true,
+			["Health"]=true,
+			["Level"]=true,
+			["Name"]=true,
+			["Quest"]=true,
+			["RaidTarget"]=true,
+			["SpellLock"]=true,
+			["Summoned"]=true,
+			["Target"]=true,
+			["Threat"]=true,
+			["Type"]=true,
+			["UnitID"]=true,
+			["CoolDown"]=true,
+			["CC_DR"]=true,
+			["Power"]=true,
+			["ComboPoints"]=true,
+			["Speed"]=true,
+			["Tapped"]=true,
+			["Guild"]=true,
+			["NPCGuild"]=true,
+			["Friends"]=true,
+			["Role"]=true,
+			["BaseEvent"]=true,
+			["Unit"]=false,
+			["Shield"]=true,
+			["Range"]=false
+		},
+		NamePlateModules={
+			["MainFrame"]=true,
+			["BarGroup"]=true,
+			["Icon"]=true,
+			["IconGroup"]=true,
+			["Number"]=true,
+			["Text"]=true,
+			["TextureGroup"]=true,
+			["Default"]=true,
+		},
+		UsingScrollFrameRender=false,
+		CombiePetCoolDown=false,
+		CombieMasterCoolDown=false,
+		InstantAsOneSecondCast=false,
+		EnableAuraCache=false,
+		AdvancedType=true,
+		PowerMatch=false,
+		PetNameMatch=true,
+		IconToSchool=false,
+		--collector
+		FastCollectArena=false,
+		FastCollectParty=false,
+		FastCollectRaid=false,
+		FastCollectBoss=false,
+		--Spellid in tooltips
+		SpellIDInTooltips=true,
+		--
+		EnableCoolDownCache=false,
+	}
+end)
